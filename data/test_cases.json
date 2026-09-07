@@ -1,1 +1,50 @@
-
+[
+  {
+    "id": "case_1_happy_path",
+    "nazev": "Orná půda u obce s přístupem (Starý Kolín)",
+    "vstup": "KÚ: Starý Kolín (754714), parcela č. 852/12, výměra 18 420 m2. Druh pozemku: Orná půda. Vlastnictví: 1/1, čisté LV bez věcných břemen a zástav. Přístup: přímo z obecní komunikace. LPIS: aktivní pacht, orná půda. Ochrana přírody a záplavy: mimo záplavová území, bez CHKO/Natura 2000.",
+    "ocekavany_vystup": {
+      "doporuceni": "KOUPIT",
+      "skore_rizika": 2,
+      "skore_likvidity": 8,
+      "hlavni_segment": "Orná půda"
+    },
+    "skutecny_vystup_modelu": null
+  },
+  {
+    "id": "case_2_environmental_stop",
+    "nazev": "Aktivní záplavová zóna Berounky a CHKO (Srbsko)",
+    "vstup": "KÚ: Srbsko u Karlštejna (753050), parcela č. 314/2, výměra 4 210 m2. Druh pozemku: Trvalý travní porost. Vlastnictví: 1/1. Přístup: obklopeno cizími parcelami bez zřízeného věcného břemene chůze a jízdy. Limity: aktivní zóna záplavového území Q20, I. zóna CHKO Český kras.",
+    "ocekavany_vystup": {
+      "doporuceni": "ZAMÍTNOUT",
+      "skore_rizika": 10,
+      "skore_likvidity": 1,
+      "hlavni_segment": "TTP / Pastvina"
+    },
+    "skutecny_vystup_modelu": null
+  },
+  {
+    "id": "case_3_legal_issue",
+    "nazev": "Stavební rezerva s exekuční plombou (Říčany)",
+    "vstup": "KÚ: Říčany u Prahy (745472), parcela č. 1104/5, výměra 980 m2. Druh pozemku: Zahrada. Vlastnictví: podíl 1/2, na LV je vyznačena exekuční plomba na podíl spoluvlastníka. Územní plán: plocha čistě obytná (BI). Přístup: zajištěn z obecní ulice.",
+    "ocekavany_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 7,
+      "skore_likvidity": 6,
+      "hlavni_segment": "Stavební / Rozvojový"
+    },
+    "skutecny_vystup_modelu": null
+  },
+  {
+    "id": "case_4_missing_data",
+    "nazev": "Nekompletní vstup z katastru (Dolní Břežany)",
+    "vstup": "KÚ: Dolní Břežany (629006), parcela č. 512/3, výměra 1 450 m2. Druh: Ostatní plocha. Vlastnické podíly, přístupová cesta, věcná břemena ani záplavové zóny nebyly dodány.",
+    "ocekavany_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 6,
+      "skore_likvidity": 4,
+      "hlavni_segment": "Ostatní / Nevyužitelné"
+    },
+    "skutecny_vystup_modelu": null
+  }
+]
