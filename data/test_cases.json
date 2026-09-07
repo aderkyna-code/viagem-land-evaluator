@@ -10,31 +10,28 @@
       "hlavni_segment": "Orná půda"
     },
     "skutecny_vystup_modelu": {
-      "doporuceni": "PROVĚŘIT",
-      "skore_rizika": 3,
-      "skore_likvidity": 8,
+      "doporuceni": "KOUPIT",
+      "skore_rizika": 1,
+      "skore_likvidity": 9,
       "hlavni_segment": "Orná půda",
       "klicove_faktory": {
         "pozitiva": [
-          "Výměra 18 420 m2 představuje komerčně zajímavou výměru pro zemědělský pozemek.",
-          "Orná půda s aktivním využitím v LPIS podporuje standardní zemědělské využití a likviditu.",
-          "Vlastnictví 1/1 bez uvedených věcných břemen a zástav výrazně snižuje právní riziko.",
-          "Přímý přístup z obecní komunikace je významným pozitivním faktorem pro užívání i budoucí prodej.",
-          "Pozemek je podle zadaných údajů mimo záplavová území a bez CHKO/Natura 2000.",
-          "Katastrální území Starý Kolín má významný podíl orné půdy; podle aktuálních údajů ČÚZK jde o 445 parcel orné půdy o celkové výměře 5 597 460 m2."
+          "Vlastnický podíl 1/1 s čistým LV bez zástav a břemen",
+          "Přímý přístup z veřejné obecní komunikace",
+          "Zajímavá výměra 18 420 m2 tvořící ucelený blok",
+          "Absence environmentálních rizik (mimo záplavové zóny a CHKO/Natura 2000)",
+          "Zemědělsky aktivní pozemek evidovaný v LPIS"
         ],
         "rizika": [
-          "Ve webových podkladech ČÚZK je aktuálně pro katastrální území Starý Kolín uveden kód 755052, zatímco ve vstupních datech je uveden kód 754714; identifikaci KÚ je proto nutné před akvizicí ověřit.",
-          "Územně-plánovací potenciál parcely nebyl ve vstupních datech specifikován a nelze jej bez ověření konkrétního umístění parcely v územním plánu považovat za potvrzený.",
-          "Aktivní pacht znamená, že je nutné prověřit podmínky pachtovní smlouvy, její délku a případné dopady na okamžité užívání a dispozici s pozemkem."
+          "Aktivní pachtovní smlouva (standardní stav, nutno pouze prověřit délku výpovědní lhůty)"
         ]
       },
       "analyza_parametru": {
-        "pravni_stav": "Vstupní data uvádějí vlastnictví 1/1 a čisté LV bez věcných břemen a zástav. Kritickým právním rizikem podle zadaných údajů není nic uvedeno; před koupí je vhodné ověřit aktuální LV a zejména absenci plomb.",
+        "pravni_stav": "Bezproblémový. Vlastnictví 1/1, čisté LV bez jakýchkoliv plomb, exekucí či věcných břemen.",
         "pristupnost": "Zajištěna z veřejné komunikace",
-        "environment_limity": "Orná půda, aktivně evidovaná v LPIS. Podle vstupních dat mimo záplavová území a bez CHKO/Natura 2000. Environmentální STOP-faktor nebyl uveden. Územní plán a konkrétní rozvojové omezení parcely nejsou ve vstupních datech potvrzeny."
+        "environment_limity": "Bez limitů. Pozemek leží mimo aktivní i pasivní záplavové zóny a nepodléhá ochraně přírody (CHKO, NP, Natura 2000). Evidováno v LPIS."
       },
-      "duvod_a_dalsi_krok": "Pozemek má velmi dobrý profil pro zemědělský výkup: velká výměra, 1/1 vlastnictví, přímý přístup, aktivní LPIS a absence uvedených zásadních právních či environmentálních limitů. Doporučuji pokračovat v akvizici, ale před finálním rozhodnutím ověřit nesoulad v kódu KÚ, aktuální LV a pachtovní smlouvu a současně prověřit zařazení parcely v platném územním plánu Starého Kolína."
+      "duvod_a_dalsi_krok": "Pozemek představuje prémiovou zemědělskou parcelu s ideálními parametry bez jakýchkoliv právních či fyzických vad. Doporučuji neprodleně zahájit proces akvizice, vypracovat cenovou nabídku a vyžádat si od majitele k nahlédnutí platnou pachtovní smlouvu k ověření výpovědních podmínek."
     }
   },
   {
@@ -47,7 +44,28 @@
       "skore_likvidity": 1,
       "hlavni_segment": "TTP / Pastvina"
     },
-    "skutecny_vystup_modelu": null
+    "skutecny_vystup_modelu": {
+      "doporuceni": "ZAMÍTNOUT",
+      "skore_rizika": 10,
+      "skore_likvidity": 1,
+      "hlavni_segment": "TTP / Pastvina",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Vlastnictví 1/1"
+        ],
+        "rizika": [
+          "Enklávní pozemek bez jakéhokoliv právního a fyzického přístupu",
+          "Výskyt v aktivní zóně záplavového území (Q20)",
+          "Poloha v I. zóně CHKO Český kras vylučující hospodářské a stavební využití"
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Vlastnictví sice ideální 1/1, avšak bez zřízeného věcného břemene cesty a jízdy přes okolní cizí parcely.",
+        "pristupnost": "Pouze přes cizí pozemky",
+        "environment_limity": "Zásadní a fatální STOP-FAKTORY: aktivní záplavová zóna (Q20) a nejpřísnější režim ochrany přírody (I. zóna CHKO)."
+      },
+      "duvod_a_dalsi_krok": "Pozemek kumuluje tři fatální STOP-FAKTORY současně (nulový přístup, záplavy, I. zóna CHKO), čímž ztrácí jakýkoliv investiční či rozvojový potenciál. Doporučuji parcelu jednoznačně zamítnout a nealokovat další kapacity k jejímu prověřování."
+    }
   },
   {
     "id": "case_3_legal_issue",
@@ -59,7 +77,30 @@
       "skore_likvidity": 6,
       "hlavni_segment": "Stavební / Rozvojový"
     },
-    "skutecny_vystup_modelu": null
+    "skutecny_vystup_modelu": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 7,
+      "skore_likvidity": 8,
+      "hlavni_segment": "Stavební / Rozvojový",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Vysoký stavební potenciál (územní plán definuje jako plochu čistě obytnou - BI)",
+          "Zajištěný přístup z obecní komunikace",
+          "Atraktivní lokalita a vhodná výměra pro výstavbu rodinného domu (980 m2)"
+        ],
+        "rizika": [
+          "Vlastnictví pouze ideální poloviny (podíl 1/2)",
+          "Exekuční plomba na podílu spoluvlastníka (řešitelná právní vada)",
+          "Environmentální limity (záplavy, ochrana přírody) neuvedeny v datech"
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Komplikovaný, ale řešitelný. Vlastnický podíl 1/2, přičemž na podílu spoluvlastníka vázne exekuční plomba.",
+        "pristupnost": "Zajištěna z veřejné komunikace",
+        "environment_limity": "Neuvedeno v datech"
+      },
+      "duvod_a_dalsi_krok": "Pozemek má vysoký stavební potenciál s řešitelnou právní vadou v podobě exekuce, což otevírá prostor pro odkup pod cenou. Je nezbytné dohledat chybějící environmentální limity a následně kontaktovat exekutora či vlastníky s cílem konsolidovat podíly do vlastnictví 1/1."
+    }
   },
   {
     "id": "case_4_missing_data",
@@ -71,6 +112,27 @@
       "skore_likvidity": 4,
       "hlavni_segment": "Ostatní / Nevyužitelné"
     },
-    "skutecny_vystup_modelu": null
+    "skutecny_vystup_modelu": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 9,
+      "skore_likvidity": 3,
+      "hlavni_segment": "Ostatní / Nevyužitelné",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Zajímavá výměra 1 450 m2 v atraktivním KÚ Dolní Břežany"
+        ],
+        "rizika": [
+          "Absence informací o vlastnických podílech a případných právních vadách",
+          "Chybějící data o fyzickém a právním přístupu k pozemku",
+          "Environmentální limity a záplavová rizika neuvedena v datech"
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Neuvedeno v datech",
+        "pristupnost": "Neznámá",
+        "environment_limity": "Neuvedeno v datech"
+      },
+      "duvod_a_dalsi_krok": "Situace vyžaduje zařazení do kategorie PROVĚŘIT, jelikož vstupní data jsou silně nekompletní a nelze vyloučit přítomnost fatálních STOP-FAKTORŮ. Prvním krokem je bezodkladné stažení kompletního výpisu z LV, ověření přístupových cest v katastrální mapě a kontrola územního plánu."
+    }
   }
 ]
