@@ -9,7 +9,33 @@
       "skore_likvidity": 8,
       "hlavni_segment": "Orná půda"
     },
-    "skutecny_vystup_modelu": null
+    "skutecny_vystup_modelu": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 3,
+      "skore_likvidity": 8,
+      "hlavni_segment": "Orná půda",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Výměra 18 420 m2 představuje komerčně zajímavou výměru pro zemědělský pozemek.",
+          "Orná půda s aktivním využitím v LPIS podporuje standardní zemědělské využití a likviditu.",
+          "Vlastnictví 1/1 bez uvedených věcných břemen a zástav výrazně snižuje právní riziko.",
+          "Přímý přístup z obecní komunikace je významným pozitivním faktorem pro užívání i budoucí prodej.",
+          "Pozemek je podle zadaných údajů mimo záplavová území a bez CHKO/Natura 2000.",
+          "Katastrální území Starý Kolín má významný podíl orné půdy; podle aktuálních údajů ČÚZK jde o 445 parcel orné půdy o celkové výměře 5 597 460 m2."
+        ],
+        "rizika": [
+          "Ve webových podkladech ČÚZK je aktuálně pro katastrální území Starý Kolín uveden kód 755052, zatímco ve vstupních datech je uveden kód 754714; identifikaci KÚ je proto nutné před akvizicí ověřit.",
+          "Územně-plánovací potenciál parcely nebyl ve vstupních datech specifikován a nelze jej bez ověření konkrétního umístění parcely v územním plánu považovat za potvrzený.",
+          "Aktivní pacht znamená, že je nutné prověřit podmínky pachtovní smlouvy, její délku a případné dopady na okamžité užívání a dispozici s pozemkem."
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Vstupní data uvádějí vlastnictví 1/1 a čisté LV bez věcných břemen a zástav. Kritickým právním rizikem podle zadaných údajů není nic uvedeno; před koupí je vhodné ověřit aktuální LV a zejména absenci plomb.",
+        "pristupnost": "Zajištěna z veřejné komunikace",
+        "environment_limity": "Orná půda, aktivně evidovaná v LPIS. Podle vstupních dat mimo záplavová území a bez CHKO/Natura 2000. Environmentální STOP-faktor nebyl uveden. Územní plán a konkrétní rozvojové omezení parcely nejsou ve vstupních datech potvrzeny."
+      },
+      "duvod_a_dalsi_krok": "Pozemek má velmi dobrý profil pro zemědělský výkup: velká výměra, 1/1 vlastnictví, přímý přístup, aktivní LPIS a absence uvedených zásadních právních či environmentálních limitů. Doporučuji pokračovat v akvizici, ale před finálním rozhodnutím ověřit nesoulad v kódu KÚ, aktuální LV a pachtovní smlouvu a současně prověřit zařazení parcely v platném územním plánu Starého Kolína."
+    }
   },
   {
     "id": "case_2_environmental_stop",
