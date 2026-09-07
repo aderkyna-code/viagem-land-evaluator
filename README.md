@@ -17,5 +17,18 @@ Tento projekt obsahuje návrh a implementaci LLM řešení pro automatizované v
 ## Rychlé spuštění
 1. Klonování repozitáře:
    ```bash
-   git clone [https://github.com/](https://github.com/)<tvoje-jmeno>/viagem-land-evaluator.git
+   git clone https://github.com/aderkyna-code/viagem-land-evaluator.git
    cd viagem-land-evaluator
+   ```
+2. Instalace závislostí:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Nastavení API klíče:
+   ```bash
+   export OPENAI_API_KEY="tvuj-api-klic"
+   ```
+4. Spuštění evaluace:
+   ```bash
+   python src/evaluator.py
+   ```
