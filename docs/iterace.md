@@ -27,6 +27,11 @@
 * **Příčina:** Příliš striktní definice STOP-faktoru *„exekuční plomba na LV“*. Model ignoroval vysoký ziskový potenciál stavebního pozemku v ploše BI a vyhodnotil plombu jako absolutní stopku.
 * **Úprava pro v2:** Upravit definici STOP-faktoru exekuce. Pozemky se stavebním potenciálem v územním plánu posuzovat v kategorii `PROVĚŘIT`, pokud lze uvažovat o oddlužení či výkupu v dražbě. Jako tvrdý STOP-faktor ponechat exekuci pouze u běžné zemědělské půdy bez rozvojového potenciálu.
 
+#### 4. Dolní Břežany (Case 4 – Chybějící data a halucinace)
+* **Očekávání:** `PROVĚŘIT` (skóre rizika: 6)
+* **Skutečný výstup:** `PROVĚŘIT`
+* **Příčina:** Pravidlo proti halucinacím zafungovalo. Model si nedomyslel čisté LV ani existenci komunikace a explicitně uvedl „Neuvedeno v datech“.
+
 ---
 
 ### Iterace 3: Zpřesnění obchodní logiky a kalibrace parametrů (v2 promptu)
@@ -56,7 +61,3 @@ Na základě zjištěných diskrepancí z prvního testovacího běhu (Iterace 2
 #### 3. Závěr z iterace:
 Prompt ve verzi 2 dosáhl **100% shody v kategorických doporučeních (`doporuceni`)** napříč celým benchmarkem. Drobné odchylky zůstaly pouze v numerických škálách (1–10), což potvrzuje nutnost v produkčním prostředí počítat přesná finanční a riziková skóre deterministicky mimo samotné LLM.
 
-#### 4. Dolní Břežany (Case 4 – Chybějící data a halucinace)
-* **Očekávání:** `PROVĚŘIT` (skóre rizika: 6)
-* **Skutečný výstup:** `PROVĚŘIT`
-* **Příčina:** Pravidlo proti halucinacím zafungovalo. Model si nedomyslel čisté LV ani existenci komunikace a explicitně uvedl „Neuvedeno v datech“.
