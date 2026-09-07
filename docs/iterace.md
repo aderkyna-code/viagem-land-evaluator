@@ -41,8 +41,6 @@ Na základě zjištěných diskrepancí z prvního testovacího běhu (Iterace 2
 * **Striktní ošetření chybějících dat:** 
   Potvrzeno povinné mapování chybějících atributů na text *„Neuvedeno v datech“* s automatickým posunem do `PROVĚŘIT` u neúplných záznamů.
 
----
-
 #### 2. Výsledky po re-testu (v2 promptu):
 * **Starý Kolín (Case 1 – Happy path):** 
   * *Před úpravou:* `PROVĚŘIT` (kvůli existenci pachtu a neověřenému ÚP).
@@ -54,8 +52,6 @@ Na základě zjištěných diskrepancí z prvního testovacího běhu (Iterace 2
   * *Po úpravě:* `PROVĚŘIT` (Riziko: 7, Likvidita: 8). Model rozpoznal vysoký stavební potenciál lokality a doporučil kontaktovat exekutora/spoluvlastníka pro konsolidaci podílu.
 * **Dolní Břežany (Case 4 – Missing data stresstest):** 
   * *Výsledek:* Stabilně `PROVĚŘIT` (Riziko: 9–10, Likvidita: 1–3). Model odmítl halucinovat čistý stav a striktně vyžaduje dodání chybějících podkladů.
-
----
 
 #### 3. Závěr z iterace:
 Prompt ve verzi 2 dosáhl **100% shody v kategorických doporučeních (`doporuceni`)** napříč celým benchmarkem. Drobné odchylky zůstaly pouze v numerických škálách (1–10), což potvrzuje nutnost v produkčním prostředí počítat přesná finanční a riziková skóre deterministicky mimo samotné LLM.
