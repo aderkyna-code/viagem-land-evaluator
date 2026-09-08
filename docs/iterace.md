@@ -61,3 +61,28 @@ Na základě zjištěných diskrepancí z prvního testovacího běhu (Iterace 2
 #### 3. Závěr z iterace:
 Prompt ve verzi 2 dosáhl **100% shody v kategorických doporučeních (`doporuceni`)** napříč celým benchmarkem. Drobné odchylky zůstaly pouze v numerických škálách (1–10), což potvrzuje nutnost v produkčním prostředí počítat přesná finanční a riziková skóre deterministicky mimo samotné LLM.
 
+---
+
+## Iterace 4: Rozšíření testovacího benchmarku o doménové edge cases a validace stability v2 promptu
+
+Cíl: Ověřit, zda prompt po úpravách z Iterace 3 (v2) zůstává stabilní i při rozšíření sady o specifické hraniční případy z české katastrální a investiční praxe (drobné spoluvlastnictví a infrastrukturní věcná břemena).
+
+### 1. Nově zařazené hraniční případy:
+
+* **Lhota u Přelouče (TC-005 – Menšinový podíl 1/6 bez vyřešeného užívání):**
+  * *Kontext:* Běžný neduh české zemědělské půdy — rozdrobené vlastnictví mezi 6 fyzických osob, orná půda v LPIS, aktivní pacht na dobu neurčitou.
+  * *Očekávání:* PROVĚŘIT (skóre rizika: 6, likvidita: 4).
+  * *Skutečný výstup:* PROVĚŘIT (skóre rizika: 7, likvidita: 4).
+  * *Zhodnocení:* Model nespadl do paušálního zamítnutí, ale správně detekoval sníženou likviditu způsobenou spoluvlastnictvím a doporučil ověřit možnost konsolidace a odkupu zbylých podílů.
+
+* **Chvaletice (TC-006 – Ochranné pásmo VVN a břemeno ČEPS):**
+  * *Kontext:* Trvalý travní porost 1/1, přes který vede nadzemní vedení VVN 110 kV s ochranným pásmem 15 m a zapsaným věcným břemenem energetické společnosti.
+  * *Očekávání:* PROVĚŘIT (skóre rizika: 5, likvidita: 6).
+  * *Skutečný výstup:* PROVĚŘIT (skóre rizika: 5, likvidita: 6).
+  * *Zhodnocení:* Model správně odlišil technické omezení od fatálního stop-faktoru. Rozpoznal, že pro zemědělské sečení/pastvu není vedení fatální překážkou, ale omezuje jiné využití a vyžaduje prověření přesného rozsahu v geometrickém plánu.
+
+### 2. Výsledky a přínos iterace:
+
+* **100% shoda kategorizace:** Model u obou nových scénářů přesně trefil kategorii `PROVĚŘIT`.
+* **Konzistence pravidla o chybějících datech:** V obou případech (kde nebyla v zadání zmíněna záplavová zóna ani CHKO) model nezahalmucinoval bezrizikovost a v poli `environment_limity` striktně vypsal `"Neuvedeno v datech"`.
+* **Kompletní benchmark:** Finální sada 6 testovacích případů v `data/test_cases.json` pokrývá celou škálu od bezproblémové akvizice přes právní a infrastrukturní prověrky až po okamžité zamítnutí.
