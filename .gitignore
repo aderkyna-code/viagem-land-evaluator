@@ -1,1 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+
+# API keys and local tokens
+*.token
