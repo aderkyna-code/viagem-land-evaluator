@@ -135,4 +135,76 @@
       "duvod_a_dalsi_krok": "Situace vyžaduje zařazení do kategorie PROVĚŘIT, jelikož vstupní data jsou silně nekompletní a nelze vyloučit přítomnost fatálních STOP-FAKTORŮ. Prvním krokem je bezodkladné stažení kompletního výpisu z LV, ověření přístupových cest v katastrální mapě a kontrola územního plánu."
     }
   }
+  {
+    "id": "TC-005",
+    "nazev": "Spoluvlastnický podíl 1/6 bez vyřešeného užívání",
+    "vstup": "Zemědělský pozemek v k.ú. Lhota u Přelouče, výměra celkem 24 500 m2. Předmětem odkupu je pouze ideální spoluvlastnický podíl 1/6. Na LV je dalších 5 fyzických osob. Pozemek je veden jako orná půda, přístup přes obecní parcelu zajištěn. V LPIS evidován místním ZD, pachtovní smlouva uzavřena většinovým vlastníkem na dobu neurčitou. Žádné zástavy ani exekuce na podílu neváznou.",
+    "ocekavany_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 6,
+      "skore_likvidity": 4,
+      "hlavni_segment": "Orná půda / menšinový spoluvlastnický podíl"
+    },
+    "skutecny_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 7,
+      "skore_likvidity": 4,
+      "hlavni_segment": "Orná půda",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Zajištěný přístup z obecní komunikace",
+          "Čisté LV u daného podílu bez zástav a exekucí",
+          "Pozemek je evidován v LPIS a je zemědělsky využíván",
+          "Velká celková výměra 24 500 m2 (podíl 1/6 představuje zajímavých cca 4 083 m2)"
+        ],
+        "rizika": [
+          "Minoritní spoluvlastnický podíl (1/6) s dalšími 5 fyzickými osobami na LV",
+          "Aktivní pachtovní smlouva na dobu neurčitou uzavřená většinovým vlastníkem (omezuje okamžitou dispozici)",
+          "Environmentální limity (záplavy, ochrana přírody) neuvedeny v datech"
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Spoluvlastnický podíl 1/6, dalších 5 fyzických osob na LV. Bez zástav a exekucí. Existuje pachtovní smlouva na dobu neurčitou.",
+        "pristupnost": "Zajištěna z veřejné komunikace",
+        "environment_limity": "Neuvedeno v datech"
+      },
+      "duvod_a_dalsi_krok": "Předmětem je minoritní podíl s vyšším počtem spoluvlastníků, což snižuje likviditu, nicméně nejedná se o extrémní roztříštěnost (podíl je větší než 1/8). Doporučuji dohledat environmentální limity a následně kontaktovat ostatní spoluvlastníky k ověření možnosti odkupu a scelení na podíl 1/1."
+    }
+  },
+  {
+    "id": "TC-006",
+    "nazev": "Trvalý travní porost s ochranným pásmem VVN",
+    "vstup": "Pozemek v k.ú. Chvaletice, výměra 8 200 m2, druh pozemku: trvalý travní porost (TTP). Vlastnický podíl 1/1. Přes střed pozemku vede nadzemní vedení velmi vysokého napětí (VVN 110 kV) s ochranným pásmem 15 metrů na obě strany, na LV je věcné břemeno zřizování a provozování vedení ve prospěch ČEPS. Pozemek má přímý přístup z polní cesty ve vlastnictví obce. V LPIS je přihlášen k sečení.",
+    "ocekavany_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 5,
+      "skore_likvidity": 6,
+      "hlavni_segment": "Trvalý travní porost (TTP) s břemenem"
+    },
+    "skutecny_vystup": {
+      "doporuceni": "PROVĚŘIT",
+      "skore_rizika": 5,
+      "skore_likvidity": 6,
+      "hlavni_segment": "TTP / Pastvina",
+      "klicove_faktory": {
+        "pozitiva": [
+          "Vlastnický podíl 1/1",
+          "Zajištěný přímý přístup z obecní polní cesty",
+          "Pozemek je zemědělsky využíván a evidován v LPIS pro sečení",
+          "Ucelená výměra 8 200 m2"
+        ],
+        "rizika": [
+          "Přítomnost nadzemního vedení VVN 110 kV s ochranným pásmem 15 m na obě strany",
+          "Zapsané věcné břemeno ve prospěch ČEPS omezující případné jiné než zemědělské využití",
+          "Environmentální limity (záplavy, ochrana přírody) neuvedeny v datech"
+        ]
+      },
+      "analyza_parametru": {
+        "pravni_stav": "Vlastnictví 1/1. Na LV je zapsáno věcné břemeno zřizování a provozování vedení ve prospěch ČEPS.",
+        "pristupnost": "Zajištěna z veřejné komunikace",
+        "environment_limity": "Neuvedeno v datech"
+      },
+      "duvod_a_dalsi_krok": "Pozemek má bezproblémové vlastnictví i přístup, avšak vedení VVN přes střed parcely představuje omezení, a navíc chybí data o záplavových zónách. Je nutné dohledat environmentální limity a následně zhodnotit, zda ochranné pásmo VVN nebrání efektivnímu strojovému sečení před podáním cenové nabídky."
+    }
+  }
 ]
