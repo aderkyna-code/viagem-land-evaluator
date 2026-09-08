@@ -134,10 +134,10 @@
       },
       "duvod_a_dalsi_krok": "Situace vyžaduje zařazení do kategorie PROVĚŘIT, jelikož vstupní data jsou silně nekompletní a nelze vyloučit přítomnost fatálních STOP-FAKTORŮ. Prvním krokem je bezodkladné stažení kompletního výpisu z LV, ověření přístupových cest v katastrální mapě a kontrola územního plánu."
     }
-  }
+  },
   {
-    "id": "TC-005",
-    "nazev": "Spoluvlastnický podíl 1/6 bez vyřešeného užívání",
+    "id": "case_5_minority_share",
+    "nazev": "Spoluvlastnický podíl 1/6 bez vyřešeného užívání (Lhota)",
     "vstup": "Zemědělský pozemek v k.ú. Lhota u Přelouče, výměra celkem 24 500 m2. Předmětem odkupu je pouze ideální spoluvlastnický podíl 1/6. Na LV je dalších 5 fyzických osob. Pozemek je veden jako orná půda, přístup přes obecní parcelu zajištěn. V LPIS evidován místním ZD, pachtovní smlouva uzavřena většinovým vlastníkem na dobu neurčitou. Žádné zástavy ani exekuce na podílu neváznou.",
     "ocekavany_vystup": {
       "doporuceni": "PROVĚŘIT",
@@ -145,7 +145,7 @@
       "skore_likvidity": 4,
       "hlavni_segment": "Orná půda / menšinový spoluvlastnický podíl"
     },
-    "skutecny_vystup": {
+    "skutecny_vystup_modelu": {
       "doporuceni": "PROVĚŘIT",
       "skore_rizika": 7,
       "skore_likvidity": 4,
@@ -172,8 +172,8 @@
     }
   },
   {
-    "id": "TC-006",
-    "nazev": "Trvalý travní porost s ochranným pásmem VVN",
+    "id": "case_6_utility_easement",
+    "nazev": "Trvalý travní porost s ochranným pásmem VVN (Chvaletice)",
     "vstup": "Pozemek v k.ú. Chvaletice, výměra 8 200 m2, druh pozemku: trvalý travní porost (TTP). Vlastnický podíl 1/1. Přes střed pozemku vede nadzemní vedení velmi vysokého napětí (VVN 110 kV) s ochranným pásmem 15 metrů na obě strany, na LV je věcné břemeno zřizování a provozování vedení ve prospěch ČEPS. Pozemek má přímý přístup z polní cesty ve vlastnictví obce. V LPIS je přihlášen k sečení.",
     "ocekavany_vystup": {
       "doporuceni": "PROVĚŘIT",
@@ -181,7 +181,7 @@
       "skore_likvidity": 6,
       "hlavni_segment": "Trvalý travní porost (TTP) s břemenem"
     },
-    "skutecny_vystup": {
+    "skutecny_vystup_modelu": {
       "doporuceni": "PROVĚŘIT",
       "skore_rizika": 5,
       "skore_likvidity": 6,
